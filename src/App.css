@@ -1,0 +1,54 @@
+/* Badge styles */
+.skill-badge {
+  position: absolute;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 10;
+  transform-origin: center;
+}
+
+.skill-badge:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+}
+
+/* Grid background */
+.grid-background {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+/* Silhouette styling */
+.silhouette {
+  background-color: black;
+  width: 250px;
+  height: 300px;
+  border-radius: 125px 125px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navigation items hover effect */
+.nav-item:hover h2 {
+  transform: translateX(8px);
+}
+
+.nav-item:hover .arrow-circle {
+  background-color: white;
+  color: black;
+}
+
+/* Footer styling */
+.footer-link {
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.footer-link:hover svg {
+  transform: translateX(4px);
+}
